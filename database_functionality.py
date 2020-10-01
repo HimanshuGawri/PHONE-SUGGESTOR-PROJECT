@@ -1,5 +1,7 @@
 import mysql.connector
 
+#This file deal with the interaction with the mySQL database using MySQL python connector module
+
 def add_phone(brand,model,price,camq,proq,batq,romq,disq,ramq,cat,cam,ram,pro,bat,dis,rom,os,col,rat,pur1,pur2):
 
     mydb = mysql.connector.connect(
@@ -140,7 +142,7 @@ def intergame(z='1'):
     cmd = "select cat,brand,model from mobile"
     mycursor.execute(cmd)
     result = mycursor.fetchall()
-    #print(result)
+    
     j = 0
     phone = list()
     for i in result:
@@ -165,7 +167,7 @@ def interprop(z='1'):
     cmd = "select cat,brand,model from mobile"
     mycursor.execute(cmd)
     result = mycursor.fetchall()
-    #print(result)
+    
     j = 0
     phone = list()
     for i in result:

@@ -6,6 +6,7 @@ import database_functionality
 from tkinter import messagebox
 import webbrowser
 
+#This page deal with the graphical component of the project 
 
 class show_details:
     def __init__(self,canvas,name):
